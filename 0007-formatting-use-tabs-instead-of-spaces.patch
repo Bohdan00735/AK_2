@@ -1,0 +1,43 @@
+From 0f7082696099977bfbe5f33339f25c11732dcd3d Mon Sep 17 00:00:00 2001
+From: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Date: Thu, 15 Nov 2018 15:26:35 +0200
+Subject: [PATCH 7/7] formatting: use tabs instead of spaces
+
+Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Signed-off-by: Bohdan <bodya00735@gmail.com>
+---
+ calculator.cpp | 2 +-
+ calculator.h   | 6 +++---
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index 582518d..98318f9 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -9,5 +9,5 @@ int Calculator::Add (double a, double b)
+ 
+ int Calculator::Sub (double a, double b)
+ {
+-    return Add (a, -b);
++	return Add (a, -b);
+ }
+diff --git a/calculator.h b/calculator.h
+index 3740907..d59d596 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -3,9 +3,9 @@
+ 
+ class Calculator
+ {
+-    public:
+-        int Add (double, double);
+-        int Sub (double, double);
++	public:
++		int Add (double, double);
++		int Sub (double, double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.17.1
+
