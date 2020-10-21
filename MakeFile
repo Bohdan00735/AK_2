@@ -1,0 +1,20 @@
+.PHONY: build
+
+build:
+	g++ ./Lab3.cpp -o parcer
+
+default_goal: build def 
+.PHONY: def
+def:
+	./parcer -h cat -l-v -f someFile -o defaultFile --copy smth -V15
+
+.PHONY: run
+
+run:
+	./parcer -h
+
+clean:
+	rm -rf *.o parcer
+
+
+.DEFAULT_GOAL:=default_goal
